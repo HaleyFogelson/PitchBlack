@@ -9,14 +9,14 @@ package pitchblack;
  *
  * @author QMOtt
  */
-public class speed implements Traps {
+public class Slowness implements Traps {
 
-    public speed() {
+    public Slowness() {
     }
 
     @Override
     public void execute() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
 }

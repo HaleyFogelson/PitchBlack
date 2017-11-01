@@ -9,14 +9,14 @@ package pitchblack;
  *
  * @author QMOtt
  */
-public class teleport implements Traps {
+public class ShowBoard implements Traps {
 
-    public teleport() {
+    public ShowBoard() {
     }
 
     @Override
     public void execute() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
 }

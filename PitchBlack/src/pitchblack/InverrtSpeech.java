@@ -5,18 +5,14 @@
  */
 package pitchblack;
 
-/**
- *
- * @author QMOtt
- */
-public class slowness implements Traps {
+public class InverrtSpeech implements Traps {
 
-    public slowness() {
+    public InverrtSpeech() {
     }
 
     @Override
     public void execute() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
+    
 }

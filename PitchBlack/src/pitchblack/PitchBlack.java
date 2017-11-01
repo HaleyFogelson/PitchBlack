@@ -46,11 +46,11 @@ public class PitchBlack implements Floors {
                 int x = (int) (Math.random() * 9);
                 if (traps <= 24) {
                     if (Math.random() <= .50) {
-                        board[y][x].add(new slowness());
+                        board[y][x].add(new Slowness());
                     }
-                    board[y][x].add(new speed());
+                    board[y][x].add(new Speed());
                 } else {
-                    board[y][x].add(new invertSpeech());
+                    board[y][x].add(new InverrtSpeech());
                 }
                 traps++;
             }
@@ -73,9 +73,9 @@ public class PitchBlack implements Floors {
                 int y = (int) (Math.random() * 9);
                 int x = (int) (Math.random() * 9);
                 if (traps <= 24) {
-                    board[y][x].add(new teleport());
+                    board[y][x].add(new Teleport());
                 }
-                board[y][x].add(new showBoard());
+                board[y][x].add(new ShowBoard());
             }
         }
     }
@@ -96,12 +96,12 @@ public class PitchBlack implements Floors {
                 int y = (int) (Math.random() * 9);
                 int x = (int) (Math.random() * 9);
                 if (Math.random() <= .50) {
-                    board[y][x].add(new teleport());
+                    board[y][x].add(new Teleport());
                 } else {
                     if (Math.random() <= .50) {
-                        board[y][x].add(new slowness());
+                        board[y][x].add(new Slowness());
                     }
-                    board[y][x].add(new speed());
+                    board[y][x].add(new Speed());
                 }
                 traps++;
             }
