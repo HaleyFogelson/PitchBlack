@@ -17,11 +17,13 @@ public class Graphics extends PApplet{
     public Graphics(){
         game = new PitchBlack();
     }
+    
     @Override
     public void setup(){
         
     }
     
+    @Override
     public void draw(){
         
     }
