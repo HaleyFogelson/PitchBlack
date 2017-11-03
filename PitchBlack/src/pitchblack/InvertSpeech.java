@@ -5,9 +5,9 @@
  */
 package pitchblack;
 
-public class InverrtSpeech implements Traps {
+public class InvertSpeech implements Traps {
 
-    public InverrtSpeech() {
+    public InvertSpeech() {
     }
 
     @Override

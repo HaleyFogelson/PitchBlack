@@ -8,9 +8,9 @@ package pitchblack;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PitchBlack implements Floors {
+public class PitchBlack implements Floors{
     
-    List[][]Board;
+    List[][] board;
     Floors currentFloor;
     FloorOne stateOne;
     FloorTwo stateTwo;
@@ -21,7 +21,7 @@ public class PitchBlack implements Floors {
         stateTwo = new FloorTwo(stateOne.getBoard());
         stateThree = new FloorThree(stateTwo.getBoard());
         currentFloor = stateOne;
-        Board = currentFloor.getBoard();
+        board = currentFloor.getBoard();
     }
 
     class FloorOne extends Boards {
@@ -29,9 +29,9 @@ public class PitchBlack implements Floors {
         List[][] board;
 
         public FloorOne() {
-            board = new List[9][9];
-            for (int y = 0; y < 8; y++) {
-                for (int x = 0; x < 8; x++) {
+            board = new List[25][25];
+            for (int y = 0; y < 24; y++) {
+                for (int x = 0; x < 24; x++) {
                     board[y][x] = new ArrayList();
                 }
             }
@@ -42,15 +42,15 @@ public class PitchBlack implements Floors {
         public void addTraps() {
             int traps = 1;
             while (traps <= 25) {
-                int y = (int) (Math.random() * 9);
-                int x = (int) (Math.random() * 9);
+                int y = (int) (Math.random() * 25);
+                int x = (int) (Math.random() * 25);
                 if (traps <= 24) {
                     if (Math.random() <= .50) {
                         board[y][x].add(new Slowness());
                     }
                     board[y][x].add(new Speed());
                 } else {
-                    board[y][x].add(new InverrtSpeech());
+                    board[y][x].add(new InvertSpeech());
                 }
                 traps++;
             }
